@@ -1,74 +1,210 @@
 body {
     padding: 0;
     margin: 0;
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 html {
     padding: 0;
     margin: 0;
 }
+
+/* NAVIGATION STYLING */
 .header {
-    background-color: #1f2947;
-    padding: 0px 20px 20px 20px;
+    background-color: #1f2937;
+    padding: 0px 150px 180px 150px;
     display: flex;
+    flex: auto;
     flex-direction: column;
-    gap: 100px;
-    flex-wrap: wrap;
+    gap: 40px;
 }
 .link-container {
     display: flex;
-    gap: 10px;
-}
-.head {
-    flex-shrink: 0;
-}
-.link-container div h2 {
-    font-size: 24px;
-    color: white;
+    align-items: center;
     padding: 0px;
     margin: 0px;
+    flex: auto;
+    gap: 10px;
 }
-.link {
-    margin-left: auto;
+.link-container div h2 {
+    color: #f9faf8;
+    font-size: 30px;
 }
-.link-container div ul {
+.link-container .link {
+    padding: 0;
+    margin: 0 0 0 auto;
+}
+.link-container ul {
+    padding: 0;
+    margin: 0;
     display: flex;
-    padding: 0px;
-    color: white;
-    gap: 8px;
-    font-size: 18px;
+    flex: auto;
+    gap: 12px;
     list-style-type: none;
+    padding-inline-start: 0px;
+}
+ul li {
+    font-size: 18px;
+    font-variant: small-caps;
+    color: #e5e7eb
 }
 .mid-container {
     display: flex;
+    flex: auto;
     justify-content: space-between;
-    flex-wrap: wrap;
+    
 }
 .text-container {
-    padding: 2px;
+    padding: 4px;
 }
 .text-container h3 {
     font-size: 48px;
     font-weight: bolder;
-    color: white;
+    color: #f9faf8;
     padding: 0px;
     margin: 0px;
 }
 .text-container p {
     font-size: 18px;
-    color: white;
-    padding: 0px;
-    line-height: 4px;
+    color: #e5e7eb;
+    padding: 2px;
+    line-height: 5px;
 }
 .text-container button {
-    border-radius: 5px;
-    border: 1px solid blue;
-    background-color: blue;
+    border-radius: 7px;
+    border: 1px solid #3882f6;
+    background-color: #3882f6;
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     padding: 8px 25px;
 }
 img {
-    width: 450px;
-    height: 250px;
+    width: 500px;
+    height: 250px
+}
+
+
+
+
+/* SECTION STYLING */
+.section {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px 150px 70px 150px;
+    gap: 10px;
+}
+.info h3 {
+    color: #1f2947;
+    font-size: 36px;
+    font-weight: bolder;
+}
+.boxes {
+    display: flex;
+    flex: auto;
+    gap: 50px;
+}
+.box {
+    padding: 80px 15px;
+    border: 4px solid #3882f6;
+    border-radius: 10px;
+}
+.boxes div p {
+    font-size: 18px;
+    line-height: 4px;
+    color: #1f2937;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* ASIDE STYLING */
+.aside {
+    display: flex;
+    flex: auto;
+    padding: 120px 350px 120px 350px;
+    background-color: #e5e7eb;
+    flex-direction: column;
+    align-items: center;
+}
+.aside-text p {
+    color: #1f2947;
+    font-style: italic;
+    font-weight: light;
+    font-size: 28px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.5;
+}
+.aside-name {
+    margin-left: auto;
+}
+.aside-name h4 {
+    font-weight: bolder;
+    margin: 0px;
+    color: #1f2937;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+/* SIGN UP SECTION STYLING */
+.sign-container {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    padding: 100px 100px;
+    color: white;
+}
+.sign-box {
+    padding: 30px 100px;
+    border: 2px solid #3882f6;
+    border-radius: 5px;
+    background-color: #3882f6;
+    display: flex;
+    flex: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.sign-up h4 {
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+}
+.sign-up p {
+    margin-top: 2px;
+    padding: 0px;
+}
+.sign-box div button {
+    border: 2px solid white;
+    border-radius: 3px;
+    background-color: #3882f6;
+    color: white;
+    margin-left: auto;
+    padding: 10px 20px;
+}
+
+
+/* FOOTER */
+.footer {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    padding: 20px 100px;
+    background-color: #1f2937;
+    color: white;
+}
+.footer p {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: lighter;
 }
